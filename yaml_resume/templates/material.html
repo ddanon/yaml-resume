@@ -95,7 +95,7 @@
 					<div class="job">{{ resume.contact.job }}</div>
 					<span class="summary">{{ resume.contact.summary }}</span>
 				</div>
-                <div class="section-headline experience">Experiences</div>
+                <div class="section-headline experience">Experience</div>
                 {% for e in resume.experiences %}
                 <div class="block">
                     <h3 class="headline">{{ e.position }} - {{ e.company }}</h3>
@@ -106,7 +106,13 @@
                             {{ e.start_date }} - {{ e.end_date }}
                         {% endif %}
                     </div>
-                    <p class="content">{{ e.summary }}</p>
+                    <div class="expsubheadline">
+                        <ul> 
+                        {% for i in e.summary %}
+                            <li> {{i}} </li> 
+                        {% endfor %}
+                        </ul>
+                    </div>
                     {% if e.tags %}
                     <div class="tags">
                         -{% for tag in e.tags %} {{ tag }} -{% endfor %}

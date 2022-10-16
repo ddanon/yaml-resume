@@ -38,7 +38,7 @@ class Resume(yaml.YAMLObject):
         self,
         contact,
         profiles,
-        experiences,
+        experience,
         education,
         skills,
         languages,
@@ -47,7 +47,7 @@ class Resume(yaml.YAMLObject):
     ):
         self.contact = contact
         self.profiles = profiles
-        self.experiences = experiences
+        self.experience = experience
         self.education = education
         self.skills = skills
         self.languages = languages
