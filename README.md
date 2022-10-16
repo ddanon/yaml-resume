@@ -1,8 +1,9 @@
 # yaml-resume
 
-![](https://yaml-resume.com/logo.png)
+## It's Forked!
 
-[![PyPI version](https://badge.fury.io/py/yaml-resume.svg)](https://badge.fury.io/py/yaml-resume)
+This is a fork of the excellent [yaml-resume](https://badge.fury.io/py/yaml-resume) available on pypi.
+
 ![tests](https://github.com/notsag/yaml_resume/actions/workflows/build.yml/badge.svg?branch=master)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=notsag_yaml-resume&metric=alert_status)](https://sonarcloud.io/dashboard?id=notsag_yaml-resume)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -12,17 +13,8 @@
 
 ## Purpose
 
-This is an open source initiative to create a YAML-based resume.
+Building upon the open source initiative to create a YAML-based resume. I am adding some tweaks that I have found useful, and using this repository to demonstrate those separately from the main project. 
 
-## Getting Started
-
-### Install
-
-Package is available on Pypi : 
-
-```
-pip install yaml-resume
-```
 
 ### Usage
 
@@ -43,10 +35,6 @@ Export you resume in html or pdf:
 ```
 yaml-resume export FILENAME [-t <theme>] [-e <html|pdf>] [-i <picture>] [-o <output-file>]
 ```
-
-## Contributions
-
-Please have a look at the [contributing guide](https://github.com/notsag/yaml-resume/blob/master/CONTRIBUTING.md) and the [code of conduct](https://github.com/notsag/yaml-resume/blob/master/CODE_OF_CONDUCT.md).
 
 ### TL;DR
 
@@ -69,14 +57,3 @@ python3 -m pytest --cov=yaml_resume tests/
 # To install pre-commit hook
 pre-commit install
 ```
-
-## Credits
-
-This project was inspired by : [JSON Resume](https://github.com/jsonresume).
-
-Special thanks to all contributors of the following projects used by yaml-resume :
- - [click](https://palletsprojects.com/p/click/)
- - [cerberus](https://python-cerberus.org)
- - [PyYAML](https://pyyaml.org/)
- - [jinja2](https://palletsprojects.com/p/jinja/)
- - [WeasyPrint](https://weasyprint.org/)
